@@ -1,0 +1,90 @@
+/* CSS stylings */
+
+
+
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #37414a;
+}
+
+.container {
+background-color: #37414a;
+font-size: 18px;
+color: #52c364;
+}
+
+
+.panel-body {
+    padding: 15px;
+    background: #000;
+}
+
+
+.btn-primary {
+    color: #000;
+    background-color: lightgreen;
+    border-color: green;
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+.btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:hover {
+    color: black;
+    background-color: green;
+    border-color: green;
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+.panel-primary {
+    border: 3px solid black;
+}
+
+.panel-primary>.panel-heading {
+   color: black;
+    background-color: green;
+    border: 3px solid green;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 3px solid transparent;
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px; 
+}
+
+.table>thead:first-child>tr:first-child>th {
+    border-top: 0;
+    background: blue;
+    color: black;
+}
+
+.form-control {
+    display: block;
+    width: 50%;
+    height: 34px;
+    padding: 24px 16px;
+    font-size: 20px;
+    line-height: 1.42857143;
+    letter-spacing: 2px;
+    color: grey;
+    background: black;
+    border: 1px solid darkgrey;
+}
+
+.table>tbody>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid darkblue;
+
+}
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid darkgrey;
+}

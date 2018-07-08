@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express Train Scheduler</title>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+   
+    <script src="assets/javascript/moment.min.js"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+<div class="container">
+      <div class="jumbotron" style="margin-top:20px; text-align:center;">
+            <img src="assets/images/train.jpg" width="100%">
+      </div>
+
+ <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">ADD A TRAIN TO THE SCHEDULE</h3>
+            </div>
+
+      <div class="panel-body">
+              <form>
+                <div class="form-group">
+                        <label>TRAIN NAME</label>
+                        <input type="text" class="form-control" id="train-x">
+                </div>
+                <div class="form-group">
+                        <label>DESTINATION CITY</label>
+                        <input type="text" class="form-control" id="city-x">
+                </div>
+                <div class="form-group">
+                        <label>FIRST TRAIN LEAVES AT (HH:MM)</label>
+                        <input type="text" class="form-control" id="first-leaves-x">
+                </div>
+                <div class="form-group">
+                        <label>LEAVES EVERY (IN MINUTES I.E. 120)</label>
+                        <input type="text" class="form-control" id="leaves-every-x">
+                </div>
+                      <button type="submit" class="btn btn-primary" id="add-button-x">ADD TRAIN TO SCHEDULE</button>
+                </form>
+        </div>
+</div>
+
+    
+
+          <div class="row">
+              
+                <div class="col-lg-12">
+                  
+                        <div class="panel panel-primary">
+                      
+                                <div class="panel-body">
+
+                                
+                                <table class="table table-hover" id="table-express">
+
+                                <thead>
+                                    <tr>
+                                        <th>TRAIN NAME</th>
+                                         <th>TRAVELS TO</th>
+                                          <th>LEAVES EVERY</th>
+                                           <th>NEXT TRAIN LEAVES</th>
+                                            <th>MINUTES AWAY</th>
+                                    </tr>
+                                </thead>
+
+                                
+                                <tbody></tbody>
+                                </table>
+
+                              </div> 
+                      </div> 
+              </div>
+        </div>
+  </div>
+
+
+    <script src="assets/javascript/app.js"></script>
+
+  </body>
+</html>
